@@ -1554,3 +1554,125 @@
 .action-btn:hover {
     transform: scale(1.1);
 }
+@media (max-width: 767.98px) {
+    #header-top {
+        display: none;
+        /* Hide the top marquee bar */
+    }
+
+    .main-header-section {
+        padding: 1rem 0;
+    }
+
+    .main-header-section .logo {
+        font-size: 2rem;
+        position: static;
+        /* Remove absolute positioning */
+        transform: none;
+        margin: 0 auto;
+        /* Center the logo */
+    }
+
+    .main-header-section .d-flex {
+        justify-content: space-between !important;
+    }
+
+    .header-left,
+    .header-actions {
+        flex: 0 1 auto;
+        /* Allow header sections to shrink */
+    }
+
+    .live-btn {
+        display: none !important;
+        /* Hide live button */
+    }
+
+    .hero-carousel .carousel-item {
+        aspect-ratio: 4 / 3;
+        /* Adjust aspect ratio for mobile */
+    }
+
+    .hero-carousel .carousel-caption {
+        padding: 1rem;
+    }
+
+    .hero-carousel .caption-title {
+        font-size: 18px;
+    }
+
+    .hero-carousel .caption-author img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero-carousel .caption-author .comments {
+        margin-left: 1rem;
+    }
+
+    .latest-section .container {
+        grid-template-columns: 1fr;
+        /* Stack main content and sidebar */
+    }
+
+    .latest-section .sidebar {
+        position: static;
+        /* Remove sticky positioning for the sidebar */
+        top: auto;
+        margin-top: 2rem;
+    }
+
+    .latest-posts-section .col-lg-6,
+    .world-opinions .col-lg-4 {
+        margin-bottom: 2rem;
+        /* Add space between stacked items */
+    }
+
+    .featured-post-card .post-title,
+    .featured-post-card1 .post-title1 {
+        font-size: 20px;
+    }
+
+    .article-card {
+        flex-direction: column;
+    }
+
+    .article-card .article-image {
+        width: 100%;
+        height: 200px;
+        /* Give a fixed height to images */
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .site-footer {
+        padding: 40px 0;
+    }
+
+    .footer-nav,
+    .footer-middle,
+    .footer-bottom,
+    .footer-legal {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video-carousel {
+        height: 900px;
+        /* Let content determine height */
+        padding: 40px 0;
+    }
+
+    .carousel-wrapper {
+        flex-direction: column;
+        margin-top: -200px;
+    }
+
+    .playlist-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
